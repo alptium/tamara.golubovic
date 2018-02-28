@@ -29,9 +29,9 @@ public class Main {
 			System.out.println("Now system calculate the difference");
 			int abc = ab - bc;
  
-			System.out.println("First number is:" + ab);
-			System.out.println("Second number is:" + bc);
-			System.out.println("Difference is:" + abc);
+			System.out.println("First number is: " + ab);
+			System.out.println("Second number is: " + bc);
+			System.out.println("Difference is: " + abc);
          
 			System.out.println("Enter your first number");
 			int ba = sc.nextInt();
@@ -79,23 +79,14 @@ public class Main {
 				result = firstNumber * secondNumber;		
 			} else if(operation.equals("/")) {
 				result = firstNumber / secondNumber;			
-		}
+			}
      
 			System.out.println("First number is: " + firstNumber);
 			System.out.println("Second number is: " + secondNumber);
 			System.out.println("The result is: " + result);
    
-		}																
+		}														
 	}
 }
 	
-	
-
-
-	
-		
-	   
-		
-	        
-	         
 		
