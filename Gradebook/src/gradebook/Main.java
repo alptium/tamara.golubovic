@@ -52,7 +52,7 @@ public class Main {
 			System.out.println("5.Student grade");
 			double grade5 = sc.nextDouble();
 			
-			System.out.println("Here is the list of all students and their grades: ");
+			System.out.println("Here is the list of all students and their grades:");
 			String list1 = name1 + surname1 + grade1;
 			String list2 = name2 + surname2 + grade2;
 			String list3 = name3 + surname3 + grade3;
