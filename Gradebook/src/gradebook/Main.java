@@ -2,9 +2,7 @@ package gradebook;
 
 import java.util.Scanner;
 
-public class Main
-
-	{
+public class Main {
 
 	public static void main(String[] args) {
 		try(Scanner sc = new Scanner(System.in)) { 
@@ -54,10 +52,17 @@ public class Main
 			System.out.println("5.Student grade");
 			double grade5 = sc.nextDouble();
 			
+			System.out.println("Here is the list of all students and their grades: ");
+			String list1 = name1 + surname1 + grade1;
+			String list2 = name2 + surname2 + grade2;
+			String list3 = name3 + surname3 + grade3;
+			String list4 = name4 + surname4 + grade4;
+			String list5 = name5 + surname5 + grade5;
+			
 			System.out.println("Now system is calculating the sum of grades");
 			double total = grade1 + grade2 + grade3 + grade4 + grade5;
 			
 			System.out.println("Sum of grades is:" + total);
+		}
 	}
-}
 }
