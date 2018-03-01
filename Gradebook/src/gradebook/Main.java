@@ -53,11 +53,11 @@ public class Main {
 			double grade5 = sc.nextDouble();
 			
 			System.out.println("Here is the list of all students and their grades:");
-			String list1 = name1 + surname1 + grade1;
-			String list2 = name2 + surname2 + grade2;
-			String list3 = name3 + surname3 + grade3;
-			String list4 = name4 + surname4 + grade4;
-			String list5 = name5 + surname5 + grade5;
+			System.out.println(name1 + " " + surname1 + " " + grade1);
+			System.out.println(name2 + " " + surname2 + " " + grade2);
+			System.out.println(name3 + " " + surname3 + " " + grade3);
+			System.out.println(name4 + " " + surname4 + " " + grade4);
+			System.out.println(name5 + " " + surname5 + " " + grade5);
 			
 			System.out.println("Now system is calculating the sum of grades");
 			double total = grade1 + grade2 + grade3 + grade4 + grade5;
