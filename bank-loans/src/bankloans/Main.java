@@ -41,7 +41,7 @@ public class Main {
 			System.out.println("Choose your loan cash, refinancing or loan for pensioners");
 			String loanType = sc.next();
 			
-			if (loanType.equals("cach")) {
+			if (loanType.equals("cash")) {
 				
 				System.out.println("Please enter your salary");
 				double income = sc.nextDouble();
@@ -76,8 +76,25 @@ public class Main {
 					System.out.println("We are sorry! Your request has been rejected!");
 				}
 			
+				if(loanType.equals("loan for pensioners")) {
+					
+					System.out.println("Are you pensioner?");
+					boolean pensionerConfirmation = sc.nextBoolean();
+					
+					System.out.println("Please inform us how much is your pension?");
+					double pensionPayment = sc.nextDouble();
+					
+					if (clientsAge >= 60 && pensionerConfirmation == true && pensionPayment >= 300) {
+						System.out.println("Congratulations! Your loan has been approved");
+					} else { 
+						System.out.println("We are sorry! Your request has been rejected!");
+					}
+					
+						System.out.println()
+					
+					}
+				}
 			}
-		}
 	}
 }
 
