@@ -76,21 +76,24 @@ public class Main {
 					System.out.println("We are sorry! Your request has been rejected!");
 				}
 			
-				if(loanType.equals("loan for pensioners")) {
+					if(loanType.equals("loan for pensioners")) {
 					
-					System.out.println("Are you pensioner?");
-					boolean pensionerConfirmation = sc.nextBoolean();
+						System.out.println("Are you pensioner?");
+						boolean pensionerConfirmation = sc.nextBoolean();
 					
-					System.out.println("Please inform us how much is your pension?");
-					double pensionPayment = sc.nextDouble();
+						System.out.println("Please inform us how much is your pension?");
+						double pensionPayment = sc.nextDouble();
 					
-					if (clientsAge >= 60 && pensionerConfirmation == true && pensionPayment >= 300) {
-						System.out.println("Congratulations! Your loan has been approved");
-					} else { 
-						System.out.println("We are sorry! Your request has been rejected!");
-					}
+						if (clientsAge >= 60 && pensionerConfirmation == true && pensionPayment >= 300) {
+							System.out.println("Congratulations! Your loan has been approved");
+						} else { 
+							System.out.println("We are sorry! Your request has been rejected!");
+						}
 					
-						System.out.println()
+						System.out.println("Here you can see client detals and loan information:");
+						System.out.println("Name and surname:" + clientName + clientSurname);
+						System.out.println("Loan type:" + loanType);
+						
 					
 					}
 				}
