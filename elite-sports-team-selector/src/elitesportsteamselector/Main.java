@@ -9,12 +9,7 @@ public class Main {
 		// Basketball team
 		
 		try(Scanner sc = new Scanner(System.in)) {
-		
-			int age = 18;
-			char gender = 'M';
-			boolean hasExperience = true;
-			double salary = 563.33;
-		
+
 			System.out.println("In order to apply for this team fill out this form");
 			System.out.println("What is your age?");
 			int yourAge = sc.nextInt();
