@@ -29,8 +29,6 @@ public class Main {
 				System.out.println("We are sorry, your request has been rejected");
 			}
 		
-			}
-
 		}
-
+	}
 }
