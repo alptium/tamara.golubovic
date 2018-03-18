@@ -38,7 +38,7 @@ public class Sportsselector {
 		}
 		
 		public boolean hasExperience() {
-			return hasExperience;
+			return true;
 			
 		}
 		
@@ -62,4 +62,7 @@ public class Sportsselector {
 			
 		}
 
+		public boolean getHasExperience() {
+			return false;
+		}
 }

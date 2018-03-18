@@ -45,7 +45,7 @@ public class Main {
 					
 					Sportsselector sportsselector = new Sportsselector (name, surname, age, gender, hasExperience, salary);
 		
-				if (sportsselector.hasExperience() == true && sportsselector.getSalary() <= 563.33 && age >= 18 && sportsselector.getGender() == 'M') {
+				if (sportsselector.getHasExperience() == true && sportsselector.getSalary() <= 563.33 && sportsselector.getAge() >= 18 && sportsselector.getGender() == 'M') {
 					System.out.println("Congratulation! You are accepted to basketball team!");
 					acceptedList.add(sportsselector);
 				} else {
@@ -64,7 +64,7 @@ public class Main {
 					
 					}
 						System.out.println("List of accepted candidates:");
-					
+						
 						int i = 1;
 					
 					for (Sportsselector sportsselector : acceptedList) {
@@ -73,8 +73,7 @@ public class Main {
 					}
 					
 					System.out.println("List of rejected candidates:");
-					System.out.println();
-
+					
 					int j = 1;
 					
 					for(Sportsselector sportsselector : rejectedList) {
