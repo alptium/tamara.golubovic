@@ -6,9 +6,15 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		ArrayList<Student> students = readStudents();
+		printStudents(students);
+		printGradeSum(students);
+	}
+	
+	private static ArrayList<Student> readStudents() {
+		ArrayList<Student> students = new ArrayList<Student>();
+		
 		try(Scanner sc = new Scanner(System.in)) { 
-			
-			ArrayList<Student> students = new ArrayList<Student>();
 			
 			int i = 0;
 			
@@ -26,29 +32,34 @@ public class Main {
 				
 				i++;
 			}
-			
-			System.out.println("Here is the list of all students and their grades:");
-			
-			for(Student student : students) {
-				printStudent(student);
-			}
-			
-			System.out.println("Now system is calculating the sum of grades");
-			
-			double total = 0;
-			
-			for(Student student : students) {
-				double grade = student.getGrade();
-				total = total + grade;
-				printStudent(student);
-			}
-			
-			System.out.println("Sum of grades is:" + total);
+		}	
+		
+		return students;
+	}
+	
+	private static void printStudents(ArrayList<Student> students) {
+		System.out.println("Here is the list of all students and their grades:");
+		
+		for(Student student : students) {
+			printStudent(student);
 		}
 	}
 	
-	private static Student readStudent(Scanner sc, int position) {
+	private static void printGradeSum(ArrayList<Student> students) {
+		System.out.println("Now system is calculating the sum of grades");
 		
+		double total = 0;
+		
+		for(Student student : students) {
+			double grade = student.getGrade();
+			total = total + grade;
+			printStudent(student);
+		}
+		
+		System.out.println("Sum of grades is:" + total);	
+	}
+	
+	private static Student readStudent(Scanner sc, int position) {
 		System.out.println(position + ". Student name");
 		String name = sc.next();
 		
