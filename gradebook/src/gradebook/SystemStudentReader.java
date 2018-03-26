@@ -3,7 +3,7 @@ package gradebook;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class SystemStudentReader {
+public class SystemStudentReader implements StudentReader {
 	
 	public ArrayList<Student> read() {
 		ArrayList<Student> students = new ArrayList<Student>();
