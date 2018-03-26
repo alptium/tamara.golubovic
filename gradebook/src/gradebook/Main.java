@@ -8,22 +8,31 @@ public class Main {
 	public static void main(String[] args) {
 		try(Scanner sc = new Scanner(System.in)) { 
 			
-			Student student1 = readStudent(sc, 1);
-			Student student2 = readStudent(sc, 2);
-			Student student3 = readStudent(sc, 3);
-			Student student4 = readStudent(sc, 4);
-			Student student5 = readStudent(sc, 5);
+			ArrayList<Student> students = new ArrayList<Student>();
+			
+			for(int i = 0; i < 5; i++) {
+				int position = i + 1;
+				Student student = readStudent(sc, position);
+				students.add(student);
+			}
 			
 			System.out.println("Here is the list of all students and their grades:");
 			
-			printStudent(student1);
-			printStudent(student2);
-			printStudent(student3);
-			printStudent(student4);
-			printStudent(student5);
+			for(int i = 0; i < 5; i++) {
+				Student student = students.get(i);
+				printStudent(student);
+			}
 			
 			System.out.println("Now system is calculating the sum of grades");
-			double total = student1.getGrade() + student2.getGrade() + student3.getGrade() + student4.getGrade() + student5.getGrade();
+			
+			double total = 0;
+			
+			for(int i = 0; i < 5; i++) {
+				Student student = students.get(i);
+				double grade = student.getGrade();
+				total = total + grade;
+				printStudent(student);
+			}
 			
 			System.out.println("Sum of grades is:" + total);
 		}
