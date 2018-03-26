@@ -10,7 +10,9 @@ public class Main {
 			
 			ArrayList<Student> students = new ArrayList<Student>();
 			
-			for(int i = 0; i < 5; i++) {
+			int numStudents = 1000;
+			
+			for(int i = 0; i < numStudents; i++) {
 				int position = i + 1;
 				Student student = readStudent(sc, position);
 				students.add(student);
@@ -18,7 +20,7 @@ public class Main {
 			
 			System.out.println("Here is the list of all students and their grades:");
 			
-			for(int i = 0; i < 5; i++) {
+			for(int i = 0; i < numStudents; i++) {
 				Student student = students.get(i);
 				printStudent(student);
 			}
@@ -27,7 +29,7 @@ public class Main {
 			
 			double total = 0;
 			
-			for(int i = 0; i < 5; i++) {
+			for(int i = 0; i < numStudents; i++) {
 				Student student = students.get(i);
 				double grade = student.getGrade();
 				total = total + grade;
