@@ -10,12 +10,21 @@ public class Main {
 			
 			ArrayList<Student> students = new ArrayList<Student>();
 			
-			int numStudents = 1000;
+			int i = 0;
 			
-			for(int i = 0; i < numStudents; i++) {
+			while(true) {
 				int position = i + 1;
 				Student student = readStudent(sc, position);
 				students.add(student);
+				
+				System.out.println("Quit? y / n");
+				String response = sc.next();
+				
+				if(response.equalsIgnoreCase("y")) {
+					break;
+				}
+				
+				i++;
 			}
 			
 			System.out.println("Here is the list of all students and their grades:");
