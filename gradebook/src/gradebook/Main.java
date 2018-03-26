@@ -20,8 +20,7 @@ public class Main {
 			
 			System.out.println("Here is the list of all students and their grades:");
 			
-			for(int i = 0; i < numStudents; i++) {
-				Student student = students.get(i);
+			for(Student student : students) {
 				printStudent(student);
 			}
 			
@@ -29,8 +28,7 @@ public class Main {
 			
 			double total = 0;
 			
-			for(int i = 0; i < numStudents; i++) {
-				Student student = students.get(i);
+			for(Student student : students) {
 				double grade = student.getGrade();
 				total = total + grade;
 				printStudent(student);
