@@ -68,7 +68,7 @@ public class Main {
 						int i = 1;
 					
 					for (Sportsselector sportsselector : acceptedList) {
-						System.out.println("" + i + "." + "\t" + sportsselector.getName() + "\t" + sportsselector.getSurname());
+						System.out.println(sportsselector.getName() + " " + sportsselector.getSurname());
 						i++;
 					}
 					
@@ -77,7 +77,7 @@ public class Main {
 					int j = 1;
 					
 					for(Sportsselector sportsselector : rejectedList) {
-					System.out.println("" + j + "." + "\t" + sportsselector.getName() + "\t" + sportsselector.getSurname());
+					System.out.println(sportsselector.getName() + " " + sportsselector.getSurname());
 					j++;
 			}	
 		}
