@@ -57,10 +57,10 @@ public class Main {
 					System.out.println("If you want to continue click yes for you want to quit click no");
 					String choice = sc.next();
 					
-					while (choice.equals("yes")) {
+					while (choice.equalsIgnoreCase("yes")) {
 						System.out.println("In order to continue complete next form:");
 						runDemoSportsselector();
-					} if (choice.equals("no")) break;
+					} if (choice.equalsIgnoreCase("no")) break;
 					
 					}
 						System.out.println("List of accepted candidates:");
